@@ -17,10 +17,12 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- Link CSS -->
+    <script src="js/script.js" defer></script>
     <!-- FavIcon -->
     <link rel="shortcut icon" href="img/code-slash.svg" type="image/x-icon">
 </head>
+
 <body>
     <div class="container col-11 col-md-9" id="form-container">
         <div class="row align-items-center gx-5">
@@ -28,16 +30,19 @@
                 <h2>Faça o login para continuar!</h2>
                 <form>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail: " required>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="Digite o seu e-mail: " required>
                         <label for="email" class="form-label">
                             Digite o seu email:
                         </label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Digite sua senha: " required>
+                        <input type="password" class="form-control" id="pass"
+                            placeholder="Digite sua senha: " required>
+                            <input type="checkbox" class="form-checkbox m-2" onclick="mostrarSenha()">Mostrar senha
                         <label for="password" class="form-label">
-                            Digite sua senha: 
+                            Digite sua senha:
                         </label>
                     </div>
                     <input type="submit" class="btn btn-primary" value="Enviar">
@@ -47,7 +52,7 @@
                 <div class="col-12">
                     <img src="img/sign_in.svg" alt="Imagem de entrar no sistema" class="img-fluid">
                 </div>
-                
+
                 <div class="col-12" id="link-container">
                     <a href="cadastro.html">Ainda não tem cadastro?</a>
                 </div>
@@ -55,4 +60,5 @@
         </div>
     </div>
 </body>
+
 </html>
